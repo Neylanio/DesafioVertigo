@@ -1,0 +1,8 @@
+Utilzar um midleware pra direcionar a conexao de qual banco de dados contem informacoes requeridas enquanto a nova base de dados
+recebe o espelhamento dos dados.
+
+
+Criar uma réplica de leitura do Postgres da sua instância de banco de dados SQL Server. 
+Quando o atraso da réplica entre a instância de banco de dados SQl Server e a réplica de leitura do Postgres for 0, 
+você pode direcionar seus aplicativos clientes para a réplica de leitura do Postgres e interromper a replicação, 
+a fim de que a réplica de leitura do Postgres se torne um cluster de banco de dados autônomo.

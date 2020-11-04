@@ -1,0 +1,10 @@
+Trabalhar com o endpoint de maneira assíncrona, utilizando o auxilio de um Cache provider como o REDIS seria uma boa solução pra isso, 
+agindo como um banco de dados NoSql do tipo chave-valor salvando as informacoes do estado do video em cache a cada 5 segundos. Eliminaria 
+o gargalo do salvamento constante na base de dados compartilhada. 
+
+A utilização de um cache provider como o REDIS seria interessante pelo grande volume de dados, por tratar bem de enfileiramento de 
+processos, Analise em tempo real, itens que tem tempo de duração determinado (no caso a cada 5 segundos seria feita um atualizacao 
+do estado).
+
+Para a estratégia de sincronizar os dados do REDIS com a base de dados primária, poderia ser quando o usuario finalizasse a sessao
+ou a cada certo periodo de tempo ou quando o usuario trocasse de video.
