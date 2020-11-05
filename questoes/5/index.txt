@@ -1,0 +1,4 @@
+Não utilizei Grid-layout porquê ao meu ver é interessante somente quando se tem alguns escopos a definir como: menu superior, body e footer. Geralmente uso o Grid-layout somente nesse contexto anterior e depois venho com o Flex-box dentro de cada escopo. Como nessa questão somente tinha informações para serem postas no body então não achei necessário utilizar o Grid-layout.
+
+
+Link -> https://github.com/Neylanio/desafio-vertigo-e6fz7b
